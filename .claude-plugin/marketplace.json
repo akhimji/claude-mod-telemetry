@@ -1,0 +1,14 @@
+{
+  "name": "session-telemetry-local",
+  "owner": { "name": "Aly Khimji" },
+  "metadata": {
+    "description": "Live telemetry for a Claude Code session: agents, cost, tokens, context window, tools and data flow, with alerts for context fill, budget and burn spikes."
+  },
+  "plugins": [
+    {
+      "name": "session-telemetry",
+      "source": "./",
+      "description": "Live telemetry for a Claude Code session: agents, cost, tokens, context window, tools and data flow, with alerts for context fill, budget and burn spikes."
+    }
+  ]
+}

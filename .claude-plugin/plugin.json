@@ -1,0 +1,39 @@
+{
+  "name": "session-telemetry",
+  "version": "0.1.0",
+  "description": "Live telemetry for a session: agents, cost, tokens, context window, tools and data flow.",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "alertsEnabled": {
+      "type": "string",
+      "title": "Telemetry alerts",
+      "description": "quiet: alerts are kept for the pane and the status line, and only critical ones (context at 90%, budget spent) raise a toast; all: warnings raise a toast too; off: no alerts",
+      "default": "quiet",
+      "options": ["quiet", "all", "off"]
+    },
+    "budgetUsd": {
+      "type": "number",
+      "title": "Session budget (USD)",
+      "description": "Warn at 80% and alert at 100% of this session's cost; 0 turns the budget alert off",
+      "default": 0
+    },
+    "contextWarnPct": {
+      "type": "number",
+      "title": "Context warning (%)",
+      "description": "Warn when the context reaches this share of the auto-compact threshold (of the window when auto-compact is off); 90% is always critical",
+      "default": 70
+    },
+    "burnSpikeMultiplier": {
+      "type": "number",
+      "title": "Burn spike multiplier",
+      "description": "Warn when the 5-minute burn rate is over this many times the median minute of the last 15 minutes (and at least $0.05/min)",
+      "default": 3
+    },
+    "statusLine": {
+      "type": "boolean",
+      "title": "Telemetry status line",
+      "description": "Pin a compact line under the prompt: cost, context fill, running agents, the cache clock and the top alert",
+      "default": false
+    }
+  }
+}
