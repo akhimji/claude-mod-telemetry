@@ -8,6 +8,8 @@ in the desktop app.
 
 ## Screenshots
 
+### Desktop
+
 <table>
   <tr>
     <td width="50%" valign="top">
@@ -40,6 +42,23 @@ in the desktop app.
   <br>
   <sub><b>Context, bloat audit.</b> Lists unused MCP servers and skills that are re-sent with every request, with the tokens and cost they waste.</sub>
 </p>
+
+### Terminal
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="docs/screenshots/terminal-agents.png" alt="The Agents tab in a terminal: a header with cost, tokens, burn and context, a tab bar, and an empty agent table">
+      <br>
+      <sub><b>Agents.</b> The Agents tab in a terminal.</sub>
+    </td>
+    <td width="50%" valign="top">
+      <img src="docs/screenshots/terminal-overview.png" alt="The Overview tab in a terminal: tracked cost, the prompt-cache clock, and cost, activity and trends sections">
+      <br>
+      <sub><b>Overview.</b> The Overview tab in a terminal.</sub>
+    </td>
+  </tr>
+</table>
 
 ## Install
 
