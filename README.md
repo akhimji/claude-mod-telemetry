@@ -157,3 +157,7 @@ session; installing it only on the viewing machine does nothing.
 definitions from 2.1.308. It is not guaranteed to work on other versions: the
 mod uses the plugin engine's `$` interface and UI kit, which can change between
 releases.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
